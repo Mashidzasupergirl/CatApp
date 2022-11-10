@@ -1,13 +1,95 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #ffeaf6; /* Light grey */
+  border-top: 10px solid #98225d; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
 }
+ul li {
+  margin:0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+.App {
+  background-color: rgb(255, 233, 244);
+  height: 100vh;
+  width: 100vw;
+}
+#nav-list {
+  background-color: rgb(168, 168, 168);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+}
+
+/* Home page */
+.home-container {
+  background-color: rgb(199, 255, 255);
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+}
+.side-of-home-container {
+  background-color: #ffbfdf;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-cats-container {
+  background-color: rgb(199, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  justify-content: space-between;
+}
+
+.pagination {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+footer {
+  height: 5vh;
+  background-color: rgb(225, 255, 216);
+}
+
+
+
+
