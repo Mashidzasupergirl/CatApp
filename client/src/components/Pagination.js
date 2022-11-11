@@ -17,13 +17,13 @@ export default function Pagination(props) {
         <nav>
             <ul className="pagination">
                 <li className="page-item">
-                    <div className="page-link"
+                    <div className="page-link pointer"
                         onClick={prevPage} >
                         Previous
                     </div>
                 </li>
-                <li>{currentPage}</li>
-                <li className="page-item">
+                <li className="page-item">{currentPage}</li>
+                <li className="page-item pointer">
                     <div className="page-link"
                         onClick={nextPage}>
                         Next</div>
