@@ -9,6 +9,7 @@
   color: #797979;
 }
 
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -62,7 +63,7 @@ a:hover {
 
 
 .App {
-  background-color: rgb(255, 233, 244);
+  background-color: #ffe1db;
   height: 100vh;
   width: 100vw;
 }
@@ -78,10 +79,11 @@ a:hover {
 
 /* Home page */
 .home-container {
-  background-color: rgb(199, 255, 255);
+  /* background-color: rgb(199, 255, 255); */
   display: flex;
   flex-direction: row;
   height: 90%;
+  flex-wrap: wrap;
 }
 
 .side-of-home-container {
@@ -103,10 +105,11 @@ footer {
 
 
 .all-cats-container {
-  /* background-color: rgb(235, 35, 35); */
+  background-color: #ffe1db;
   display: flex;
   flex-direction: column;
-  background-color: #ffe1db;
+  height: 80vh;
+  
 }
 
 .cards-container {
@@ -116,6 +119,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .cats-cards {
@@ -175,11 +179,13 @@ img {
   flex-direction: row;
   justify-content: center;
   padding: 1rem;
-  /* background-color: #797979;  */
+  height: 10vh;
+  padding-bottom: 6rem;
+  background-color: #ffe1db;
 
 }
 .page-item {
-  margin: 1rem;
+  margin: 0 1rem;
   /* background-color: #DCDBD9; */
   font-weight: 600;
   color: #ffffff;
@@ -198,11 +204,15 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 .home-text {
   /* background-color: #606060; */
-  margin: 0 4rem;
-  font-size: 2rem;
+  /* margin: 0 4rem; */
+  /* font-size: 2rem; */
+  font-weight: 500;
+  font-style: italic;
+    font-size: 1.5rem;
   text-shadow: 1px 1px 7px rgba(255, 255, 255, 1);
 }
 .button {
@@ -210,7 +220,8 @@ img {
   margin: 1.5rem 0;
   padding: 0.5rem 1rem;
   border-radius: 0.9rem;
-  font-size: 2rem;
+  font-weight: 600;
+    font-size: 1.5rem;
   background-color: #8cb2ad;
   cursor: pointer;
 }
@@ -232,4 +243,24 @@ text-shadow: 1px 1px 7px rgba(255, 255, 255, 1);
 -moz-box-shadow: 0px 0px 25px 3px rgb(255, 255, 255);
 box-shadow: 0px 0px 25px 3px rgb(255, 255, 255);
 
+}
+
+@media only screen and (max-width: 600px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-of-home-container {
+    /* background-color: #98225d; */
+    height: 50%;
+    width: 100%;
+    margin: 0;
+  }
+  .side-of-home-container {
+    /* justify-content: end; */
+    align-items: flex-end;
+  }
+  .start-picture { 
+    margin-bottom: 4rem;
+  }
 }
