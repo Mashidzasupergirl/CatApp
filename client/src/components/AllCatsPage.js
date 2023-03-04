@@ -15,6 +15,7 @@ function AllCatsPage({ handleFetch, cats, isLoading, errorMessage }) {
         if (!cats.length) {
             handleFetch()
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     // console.log('cats is', cats)
